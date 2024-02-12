@@ -17,6 +17,5 @@ jobs:
           server: ${{ secrets.ftp_server }}
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
-          protocol: ftps
+          protocol: ftps-legacy
           local-dir: ./assets/
-          security: loose
