@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest  
     steps:
       - name: Get the latest code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Upload images to site
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with:
           server: ${{ secrets.ftp_server }}
           username: ${{ secrets.ftp_user }}
